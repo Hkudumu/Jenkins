@@ -9,7 +9,7 @@ pipeline {
             steps {
             script {
                      def msbuild = tool name: 'MSBuild v1'
-                      bat "${msbuild}/msbuild  ${SOLUTION_NAME}"
+                      bat "msbuild  ${SOLUTION_NAME}"
                      }
 
             }
