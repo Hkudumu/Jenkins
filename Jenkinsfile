@@ -8,8 +8,7 @@ pipeline {
         stage('Build') {
             steps {
             script {
-                     def msbuild = tool name: 'MSBuild v1'
-                      bat "${msbuild} ${SOLUTION_NAME}"
+                     bat "\"${tool 'MSBuild 15.0'}\msbuild\" Jenkin Build.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}
                      }
 
             }
