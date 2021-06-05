@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
             script {
-                     bat 'dotnet build Jenkin Build\\Jenkin Build.Sln'
+                     bat 'dotnet build Jenkin Build.Sln'
                      }
 
             }
