@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-      SOLUTION_NAME="CAPSService2.0.sln"
+      SOLUTION_NAME="Jenkin Build.sln"
 	 }
     stages {
         
