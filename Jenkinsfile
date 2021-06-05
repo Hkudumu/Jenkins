@@ -3,9 +3,9 @@ pipeline {
 
     stages {
         
-        stage('Test') {
+        stage('Restore') {
             steps {
-                      bat "dotnet restore YourProjectPath\\Your_Project.csproj"
+                      bat "dotnet restore ${workspace}\\Jenkin Build.csproj"
 
             }
         }
