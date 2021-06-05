@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    environment {
+      SOLUTION_NAME="CAPSService2.0.sln"
+	 }
     stages {
         
         stage('Build') {
