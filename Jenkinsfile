@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
             script {
-                     def msbuild = tool name: 'MSBuild v4.0.30319'
+                     def msbuild = tool name: 'MSBuild v1'
                       bat "${msbuild}/msbuild  ${SOLUTION_NAME}"
                      }
 
