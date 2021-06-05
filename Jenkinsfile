@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
             script {
-                     bat "\"${tool 'MSBuild 15.0'}" Jenkin Build.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}
+                     bat 'dotnet build Jenkin Build\Jenkin Build.Sln'
                      }
 
             }
