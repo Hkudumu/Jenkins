@@ -2,14 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('Clean workspace') {
-            steps {
-                cleanWs()
-            }
-        }
+        
         stage('Test') {
             steps {
-                echo 'Testing..'
+                      bat "dotnet restore YourProjectPath\\Your_Project.csproj"
+
             }
         }
         stage('Deploy') {
