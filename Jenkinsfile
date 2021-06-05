@@ -5,7 +5,7 @@ pipeline {
         
         stage('Restore') {
             steps {
-                      bat "dotnet restore ${workspace}\\Jenkin Build.csproj"
+                      bat "dotnet restore ${workspace}"
 
             }
         }
