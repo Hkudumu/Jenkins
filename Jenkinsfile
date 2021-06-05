@@ -3,9 +3,9 @@ pipeline {
 
     stages {
         
-        stage('Restore') {
+        stage('Build') {
             steps {
-                      bat "dotnet restore ${workspace}"
+                      bat "${msbuild}/msbuild  ${SOLUTION_NAME}"
 
             }
         }
